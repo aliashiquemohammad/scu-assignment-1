@@ -12,15 +12,16 @@ import java.util.Scanner;
 public class studentAssignmentMarks
 {
     // instance variables - replace the example below with your own
-    private int x;
+    private int[] studentAssignmentMarks;
+    private String studentAssignmentName;
 
     /**
      * Constructor for objects of class studentAssignmentMarks
      */
     public studentAssignmentMarks()
     {
-        // initialise instance variables
-        x = 0;
+        // initialise instance variables with array for 30
+        studentAssignmentMarks = new int[30];
     }
 
     /**
