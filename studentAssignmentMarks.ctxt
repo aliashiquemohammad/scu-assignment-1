@@ -1,0 +1,18 @@
+#BlueJ class context
+comment0.target=studentAssignmentMarks
+comment1.params=
+comment1.target=studentAssignmentMarks()
+comment1.text=\n\ Constructor\ for\ objects\ of\ class\ studentAssignmentMarks\n
+comment2.params=
+comment2.target=void\ getAssignmentName()
+comment2.text=\n\ Prompt\ for\ user\ to\ enter\ assignment\ name\n
+comment3.params=
+comment3.target=void\ getStudentMarks()
+comment3.text=\n\ Prompt\ for\ user\ to\ enter\ student\ marks\n\ invalid\ input\ data\ is\ not\ accepted.\n
+comment4.params=
+comment4.target=void\ showAssignmentNameAndStudentMarks()
+comment4.text=\n\ \n
+comment5.params=args
+comment5.target=void\ main(java.lang.String[])
+comment5.text=\n\ Default\ method\ to\ run\ the\ whole\ program\ by\ having\n\ a\ instance\ of\ the\ class\ itself\ and\ calling\ all\ the\ method\ one\ by\ one.\n
+numComments=6
