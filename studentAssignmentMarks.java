@@ -50,7 +50,7 @@ public class studentAssignmentMarks
             while( !inputError ){
                 System.out.print( "Enter marks for student number " + counter + " : " );
                 int studentMark = inputStudentMarks.nextInt();
-                if( studentMark > 0 && studentMark <= studentAssignmentMarks.length ){
+                if( studentMark > 0 && studentMark <= 30 ){
                     counter++;
                     studentAssignmentMarks[i] = studentMark;
                     inputError = true;
@@ -62,7 +62,7 @@ public class studentAssignmentMarks
     }
     
     /**
-     * 
+     * Showing input data from the user in the screen
      */
     public void showAssignmentNameAndStudentMarks(){
         System.out.println("Assignment Name : " + studentAssignmentName);
@@ -72,6 +72,27 @@ public class studentAssignmentMarks
             counter++;
             System.out.println("Mark of student " +  counter  + " : " + studentAssignmentMarks[i]);
         }
+    }
+    
+    /**
+     * Highest and lowest marks of the student
+     */
+    public void showHighestAndLowestMarksFromStudent(){
+        
+        int highestStudentAssignmentMarks = studentAssignmentMarks[0];
+        int lowestStudentAssignmentMarks = studentAssignmentMarks[0];
+
+        for (int i = 1; i < studentAssignmentMarks.length; i++) {
+            if (studentAssignmentMarks[i] > highestStudentAssignmentMarks) {
+                highestStudentAssignmentMarks = studentAssignmentMarks[i];
+            }
+            if (studentAssignmentMarks[i] < lowestStudentAssignmentMarks) {
+                lowestStudentAssignmentMarks = studentAssignmentMarks[i];
+            }
+        }
+
+        System.out.println("Student Highest Mark: " + highestStudentAssignmentMarks );
+        System.out.println("Student Lowest Mark: " + lowestStudentAssignmentMarks );
     }
     
     /**
@@ -133,6 +154,7 @@ public class studentAssignmentMarks
         marks.getAssignmentName();
         marks.getStudentMarks();
         marks.showAssignmentNameAndStudentMarks();
+        marks.showHighestAndLowestMarksFromStudent();
         marks.calculateMeanFromStudentMarks();
         marks.calculateStandardDeviationFromStudentMarks();
     }

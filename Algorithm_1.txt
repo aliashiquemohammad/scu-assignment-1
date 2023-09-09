@@ -1,4 +1,4 @@
-Let studentAssignmentMarks be an array of Integers from 1 to 30 
+let studentAssignmentMarks be an array of Integers from 1 to 30 
 let highestStudentAssignmentMarks = studentAssignmentMarks[0]
 let lowestStudentAssignmentMarks = studentAssignmentMarks[0]
 For i = 0 To i < studentAssignmentMarks.length

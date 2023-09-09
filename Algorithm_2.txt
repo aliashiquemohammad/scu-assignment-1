@@ -1,0 +1,44 @@
+Mean Pseudocode
+=================
+
+let studentAssignmentMarks be an array of Integers from 1 to 30 
+let totalSumOfAssignmentMarks = 0;
+let lowestStudentAssignmentMarks = studentAssignmentMarks[0]
+For i = 0 To i < studentAssignmentMarks.length
+    totalSumOfAssignmentMarks = totalSumOfAssignmentMarks + studentAssignmentMarks[i];
+Endfor
+
+meanOfStudentMarks = (double) totalSumOfAssignmentMarks / studentAssignmentMarks.length;
+
+Display meanOfStudentMarks
+
+
+Standard Deviation Pseudocode
+================================
+
+let studentAssignmentMarks be an array of Integers from 1 to 30 
+let meanOfStudentMarks from a global variable which is calculated above
+let totalSumOfSquares = 0;
+let standardDeviationOfStudentMarks 
+
+For i = 0 To i < studentAssignmentMarks.length
+    let powerBaseNumber =  studentAssignmentMarks[i] - meanOfStudentMarks;
+    let powerNumber = 2;
+    let sumOfPower = 1;
+    While powerNumber != 0
+        let sumOfPower = sumOfPower *powerBaseNumber;
+        powerNumber = powerNumber - 1
+    Endwhile
+    totalSumOfSquares = totalSumOfSquares + sumOfPower;
+Endfor
+let numberToGetSquareRootOf =  totalSumOfSquares / studentAssignmentMarks.length;
+let flagVariable;
+let squareRootOfMarks = numberToGetSquareRootOf / 2; 
+do{  
+    flagVariable = squareRootOfMarks;  
+    squareRootOfMarks = ( flagVariable + ( numberToGetSquareRootOf / flagVariable ) ) / 2;  
+}
+Until ( flagVariable - squareRootOfMarks ) != 0
+standardDeviationOfStudentMarks = squareRootOfMarks;
+
+Display standardDeviationOfStudentMarks
