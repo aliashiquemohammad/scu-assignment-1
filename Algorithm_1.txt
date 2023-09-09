@@ -1,0 +1,14 @@
+Let studentAssignmentMarks be an array of Integers from 1 to 30 
+let highestStudentAssignmentMarks = studentAssignmentMarks[0]
+let lowestStudentAssignmentMarks = studentAssignmentMarks[0]
+For i = 0 To i < studentAssignmentMarks.length
+    if( studentAssignmentMarks[i] < highestStudentAssignmentMarks )
+    	highestStudentAssignmentMarks = studentAssignmentMarks[i]
+    endif
+    if( studentAssignmentMarks[i] < lowestStudentAssignmentMarks )
+    	lowestStudentAssignmentMarks = studentAssignmentMarks[i]
+    endif
+Endfor
+
+Display highestStudentAssignmentMarks
+Display lowestStudentAssignmentMarks
