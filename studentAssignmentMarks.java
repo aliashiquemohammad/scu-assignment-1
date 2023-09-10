@@ -6,6 +6,7 @@
  * 
  * @author (Mohammad Ashique Ali)
  * @version (10/09/2023)
+ * @GitHub https://github.com/aliashiquemohammad/scu-assignment-1
  */
 import java.util.Scanner;
  
@@ -22,7 +23,7 @@ public class studentAssignmentMarks
     public studentAssignmentMarks()
     {
         // initialise instance variables with array for 30
-        studentAssignmentMarks = new int[5];
+        studentAssignmentMarks = new int[30];
         meanOfStudentMarks = 0.0;
     }
     
